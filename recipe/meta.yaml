@@ -1,5 +1,5 @@
 {% set name = "watermark" %}
-{% set version = "1.4.0" %}
+{% set version = "1.5.0" %}
 {% set sha256 = "91ed2d4283436667b0e2aaa07e6cc55f1fb5fe2462e7d6bc92c45be60d83a6d0" %}
 
 package:
