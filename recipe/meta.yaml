@@ -1,6 +1,6 @@
 {% set name = "watermark" %}
-{% set version = "1.4.0" %}
-{% set sha256 = "91ed2d4283436667b0e2aaa07e6cc55f1fb5fe2462e7d6bc92c45be60d83a6d0" %}
+{% set version = "1.6.0" %}
+{% set sha256 = "df678a407314480bf6b47ed30372ed6c9f9be60030a537130189c677c6cbd6a5" %}
 
 package:
   name: {{ name|lower }}
@@ -36,7 +36,7 @@ about:
   license: BSD 3-Clause
   license_family: BSD
   license_file: LICENSE
-  summary: 'IPython magic function to print date/time stamps andvarious system information.'
+  summary: 'IPython magic function to print date/time stamps and various system information.'
   dev_url: https://github.com/rasbt/watermark
 
 extra:
