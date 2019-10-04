@@ -1,6 +1,6 @@
 {% set name = "watermark" %}
-{% set version = "1.8.2" %}
-{% set sha256 = "c44af050655e52242e5c39a5353eb17754a00723fa14b968c6373470480dc01e" %}
+{% set version = "2.0.0" %}
+{% set sha256 = "4cab56ddf215bf83a7133ce9e3ac073a0ecbd61316efa4422d09829d0b906c8b" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
