@@ -3,7 +3,7 @@ About watermark
 
 Home: https://github.com/rasbt/watermark
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/watermark-feedstock/blob/master/LICENSE.txt)
 
