@@ -13,25 +13,26 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - pip
     - python >=3.7
+    - pip
     - setuptools
-    - ipython
-
   run:
     - python >=3.7
     - ipython
-    - certifi
+    - importlib-metadata >=1.4
 
 test:
   imports:
     - watermark
-    - certifi
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/rasbt/watermark
