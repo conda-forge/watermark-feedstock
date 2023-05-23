@@ -1,11 +1,11 @@
-About watermark
-===============
+About watermark-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/watermark-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/rasbt/watermark
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/watermark-feedstock/blob/main/LICENSE.txt)
 
 Summary: IPython magic function to print date/time stamps and various system information.
 
