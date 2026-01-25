@@ -146,4 +146,5 @@ Feedstock Maintainers
 =====================
 
 * [@proinsias](https://github.com/proinsias/)
+* [@synapticarbors](https://github.com/synapticarbors/)
 
