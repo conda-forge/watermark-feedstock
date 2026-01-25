@@ -1,0 +1,47 @@
+schema_version: 1
+
+context:
+  name: watermark
+  version: 2.6.0
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
+  sha256: ee4fadccbebe855a23ae48bb8a20c1da6ddb9d81f53b6c30c77de767c7161930
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . --no-deps -vv --no-build-isolation
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - pip
+    - setuptools
+  run:
+    - python >=${{ python_min }}
+    - ipython >=6.0
+    - importlib-metadata >=1.4
+
+tests:
+  - python:
+      imports:
+        - watermark
+      pip_check: true
+      python_version: ${{ python_min }}.*
+
+about:
+  license: BSD-3-Clause
+  license_file: LICENSE
+  summary: IPython magic function to print date/time stamps and various system information.
+  homepage: https://github.com/rasbt/watermark
+  repository: https://github.com/rasbt/watermark
+
+extra:
+  recipe-maintainers:
+    - proinsias
+    - synapticarbors
